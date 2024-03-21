@@ -1,11 +1,35 @@
-function scuberGreetingForFeet(){
-  // Write your code here!
+function scuberGreetingForFeet(distance) {
+  if (distance > 2500) {
+    return "No can do.";
+  }
+  if (distance > 2000) {
+    return dollarToMessage("$30");
+  }
+  if (distance > 400) {
+    return dollarToMessage("$20");
+  }
+  return "This one is on me!";
+}
+function ternaryCheckCity(city) {
+  return city === "NYC" ? "Ok, sounds good." : "No go.";
 }
 
-function ternaryCheckCity(){
-  // Write your code here!
+function switchOnCharmFromTip(tip) {
+  switch (true) {
+    case tip > 20:
+      return "Thank you so much.";
+    case tip > 10:
+      return "Thank you so much.";
+    default:
+      should return "Thank you.";
+  }
+}function dollarToMessage(dollars) {
+  if (dollars === "$20") {
+    return "That will be twenty bucks.";
+  }
+  if (dollars === "$30") {
+    return "I will gladly take your thirty bucks.";
+  }
+  return dollars;
 }
 
-function switchOnCharmFromTip(){
-  // Write your code here!
-}
