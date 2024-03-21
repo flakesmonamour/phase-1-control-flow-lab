@@ -13,17 +13,17 @@ function scuberGreetingForFeet(distance) {
 function ternaryCheckCity(city) {
   return city === "NYC" ? "Ok, sounds good." : "No go.";
 }
-
 function switchOnCharmFromTip(tip) {
-  switch (true) {
-    case tip > 20:
-      return "Thank you so much.";
-    case tip > 10:
-      return "Thank you so much.";
-    default:
-      should return "Thank you.";
+  switch (tip) {
+      case "generous":
+          return "Thank you so much.";
+      case "not generous":
+          return "Thank you.";
+      default:
+          return "Bye.";
   }
-}function dollarToMessage(dollars) {
+}
+function dollarToMessage(dollars) {
   if (dollars === "$20") {
     return "That will be twenty bucks.";
   }
